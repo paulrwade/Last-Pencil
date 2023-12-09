@@ -1,0 +1,55 @@
+<div class="step-text">
+<p></p><h5 id="description">Description</h5><p>The game was interesting, but it went sour. No one was playing a fair game! You've taken 10 pencils, your friend decided that it is unfair and somehow took a negative number! Moreover, you both can't decide which of you won. Maybe, it's time to add new rules to the game?</p><h5 id="objectives">Objectives</h5><p>In this stage, your task is to add a new level of control over the game. When typing the input, users can make mistakes, and your goal is to detect them and inform users about them. Also, limit the possible amount of pencils taken. Let's say that <strong>players can remove not more than 3 pencils at a time</strong>.</p><p>There is a lot of work to be done so let's break down your task into smaller parts and go through all of them. Here is a list of mistakes that users can make and the corresponding feedback for each of them:</p><ol><li><p>The initial number of pencils is not a numeric string, so it can't be converted to an integer — <code class="java">The number of pencils should be numeric</code>;</p></li><li><p>The initial number of pencils is equal to <code class="java">0</code> <em>—</em> <code class="java">The number of pencils should be positive</code>;</p></li><li><p>If the input is a negative amount — <code class="java">The number of pencils should be numeric</code> (the minus sign is not a numeric);</p></li><li><p>If the chosen first player is not <code class="java">&lt;Name1&gt;</code> or <code class="java">&lt;Name2&gt;</code> — <code class="java">Choose between &lt;Name1&gt; and &lt;Name2&gt;</code>;</p></li><li><p>One of the players has taken the number of pencils that differs from <code class="java">1</code>, <code class="java">2</code>, or <code class="java">3</code> — <code class="java">Possible values: '1', '2' or '3'</code>;</p></li><li><p>One of the players has taken more pencils than there are on the table — <code class="java">Too many pencils were taken</code>.</p></li></ol><p>If one of the errors occurs, ask for input once again.</p><p>Don't forget to help determine the winner of the game. <strong>The player who takes the last pencil loses the game</strong>. Print out the result at the end of the game with the line <code class="java">&lt;Winner-name&gt; won!</code></p><p><strong>Tip:</strong> it seems like a lot, but in reality you just need to check 3 places in your code: getting the initial number of pencils, getting the name of the first player and finally retrieving the number of pencils taken by players in each turn.</p><h5 id="examples">Examples</h5><p>The greater-than symbol followed by a space (<code class="java">&gt; </code>) represents the user input. Note that it's not part of the input.</p><p><strong>Example 1: </strong><em>the initial number of pencils is not numeric</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; a
+The number of pencils should be numeric
+&gt; 5
+Who will be the first (John, Jack):
+&gt;</code></pre><p><strong>Example 2: </strong><em>the initial number of pencils equals 0</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; 0
+The number of pencils should be positive
+&gt; 20
+Who will be the first (John, Jack):
+&gt;</code></pre><p><strong>Example 3: </strong><em>the chosen first player is not in the list</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; 5
+Who will be the first (John, Jack):
+&gt; JohnJack
+Choose between 'John' and 'Jack'
+&gt; John
+|||||
+John's turn!
+&gt;</code></pre><p><strong>Example 4: </strong><em>one of the players has taken the number of pencils that differs from 1, 2, or 3</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; 5
+Who will be the first (John, Jack):
+&gt; John
+|||||
+John's turn!
+&gt; 4
+Possible values: '1', '2' or '3'
+&gt; 1
+||||
+Jack's turn!
+&gt;</code></pre><p> <strong>Example 5: </strong><em>the chosen number of pencils is not numeric</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; 5
+Who will be the first (John, Jack):
+&gt; John
+|||||
+John's turn!
+&gt; a
+Possible values: '1', '2' or '3'
+&gt; 1
+||||
+Jack's turn!
+&gt;</code></pre><p><strong>Example 6: </strong><em>John is the winner of the game</em></p><pre><code class="language-no-highlight">How many pencils would you like to use:
+&gt; 5
+Who will be the first (John, Jack):
+&gt; John
+|||||
+John's turn!
+&gt; 3
+||
+Jack's turn!
+&gt; 3
+Too many pencils were taken
+&gt; 2
+John won!</code></pre>
+</div>
