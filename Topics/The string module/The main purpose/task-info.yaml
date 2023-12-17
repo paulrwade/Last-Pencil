@@ -1,0 +1,18 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "If it's not imported, Python strings cannot be used."
+  - text: The string formatting won't work without it.
+  - text: It makes strings mutable.
+  - text: It offers additional methods to work with strings.
+files:
+  - name: main.py
+    visible: true
+    text: |+
+      #  You can experiment here, it won’t be checked
+    
+    learner_created: false
+feedback_link: https://hyperskill.org/learn/step/15333#comment
+status: Solved
+record: -1
+local_check: false

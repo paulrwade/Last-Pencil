@@ -209,5 +209,8 @@ files:
       if __name__ == '__main__':    LastPencilTest().run_tests()
     learner_created: false
 feedback_link: https://hyperskill.org/learn/step/20066#comment
-status: Unchecked
-record: -1
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 17 Dec 2023 20:29:00 UTC"
+record: 4
